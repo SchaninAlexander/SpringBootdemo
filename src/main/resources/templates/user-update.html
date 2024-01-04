@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+<h2>Update</h2>
+<form th:action="@{/user-update}" method="post">
+    <input type="hidden" name="id" th:value="${user.id}" />
+    <input type="text" name="name" th:value="${user.name}" />
+    <input type="number" name="age" th:value="${user.age}" />
+    <input type="text" name="email" th:value="${user.email}" />
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+</body>
+</html>
